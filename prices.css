@@ -87,22 +87,21 @@ table{
  
  /* Background-color of the odd rows */
  .container tr:nth-child(odd) {
-       background-color: #323C50;
+       background-color: white;
  }
  
  /* Background-color of the even rows */
  .container tr:nth-child(even) {
-       background-color: #2C3446;
+       background-color: #e5e5e5;
  }
  
  .container th {
-       background-color: #1F2739;
+       background-color: #e5e5e5;
  }
  
  .container td:nth-child(4) { color: #185875; }
  
  .container tr:hover {
-    background-color: #464A52;
  -webkit-box-shadow: 0 6px 6px -6px #0E1119;
         -moz-box-shadow: 0 6px 6px -6px #0E1119;
              box-shadow: 0 6px 6px -6px #0E1119;
