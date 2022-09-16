@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rofood</title>
+    <!--External Links-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+   
+    <!--Lower Navigation Bar-->
+    <div class="lower-nav navbar navbar-expand justify-content-evenly">
+        <section class="buttons">
+            <button onclick="login()" class="Log-in"> الدخول</button>
+            <button onclick="signup()" class="Sign-Up"> حساب تجريبي</button>
+            <button onclick=" openadmin()" class="Log-in">دخول أدمن</button>
+
+        </section>
+
+        <i onclick="mobileNav()" id="barbtn" class="fa-solid fa-bars-staggered"></i>
+
+<ul class="navbar-nav">
+
+    <li class="nav-item"><a href="" class="nav-link">قسم المساعدة</a></li>
+    <li class="nav-item"><a href="prices.html" class="nav-link">الأسعار</a></li>
+    <li class="nav-item"><a href="" class="nav-link">المدونة</a></li>
+    <li class="nav-item"><a href="" class="nav-link">كيف تعمل المنصة</a></li>
+    <li class="nav-item"><a href="" class="nav-link">المنتجات</a></li>
+    <li class="nav-item"><a href="index.html" class="nav-link">الصفحة الرئيسية</a></li>
+
+
+</ul>
+<!--Mobile Nav-->
+<div class="mobile-nav">
+    <ul>
+        <i style="cursor: pointer;" onclick="closemobileNav()" class="close-nav fa-solid fa-xmark"></i>
+    <li>
+                    <a href="index.html">الصفحة الرئيسية</a>
+                </li>
+                <li>
+                    <a>المنتجات</a>
+                    
+                </li>
+                <li>
+                    <a> كيف تعمل المنصة</a>
+                </li>
+                <li>
+                    <a>المدونة</a>
+                </li>
+                <li>
+                    <a href="prices.html"> الأسعار  </a>
+                    
+                </li>
+
+                <li>
+                    <a> قسم المساعدة </a>
+                    
+                </li>
+
+                <section class="buttons2">
+                    <button onclick="login()" class="Log-in"> الدخول</button>
+                    <button onclick="signup()" class="Sign-Up"> حساب تجريبي</button>
+                    <button onclick=" openadmin()" class="Log-in">دخول أدمن</button>
+                </section>
+    </ul>
+</div>
+
+<section class="navbar-brand" >
+    <img src="./logo.jpeg" alt="" width="100px" style="border-radius: 50%;">
+</section>
+    </div>
+    </nav>
+    <!--Content-->
+    <div class="Landing">
+        <section style="text-align: center;" class="welcome">
+            <div>
+<h1 style="font-size: 45px;">
+    برنامج رفود
+</h1>
+<p id="element"></p>
+<div id="pricebtn">
+<button class="prices" onclick="price()">عرض الأسعار</button>
+</div>
+</div>
+<div class="row justify-content-center mt-4">
+<img src="./img1.png" alt="" class="col col-xl-7">
+</div>
+        </section>
+
+        <section id="row" class="features row justify-content-center">
+            <h2 style="text-align: center; margin-bottom:50px;">
+                مميزات رفود
+            </h2>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-house"></i>
+                <p>مستودع رئيسي</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-store"></i>
+                <p>مخزون لكل محل</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-mobile"></i>
+                <p>سهولة الوصول من أي مكان</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-key"></i>
+                <p>تحديد صلاحيات لكل موظف</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-file"></i>
+                <p>وصفات متعددة لكل عميل</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-sharp fa-solid fa-display"></i>
+                <p>واجهات سهلة</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-sharp fa-solid fa-code-branch"></i>
+                <p>ربط الفروع مع بعضها في شاشة واحدة</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-message"></i>
+                <p>ربط مع موزدي خدمة الرسائل</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-store"></i>
+                <p>ربط مع متجرك الالكتروني</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-van-shuttle"></i>
+                <p>خدمة الطلب من الموردين</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-check"></i>
+                <p>موافقة التأمين</p>
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 col-xl-2">
+                <i class="fa-solid fa-check"></i>
+                <p>متوافق مع متطلبات هيئة الزكاة والضريبة</p>
+            </div>
+        </section>
+
+        <div id="row" class="row  justify-content-center mt-5 ">
+            <div class="form-info col-11 col-sm-9">
+            <h1 class="p-2">إحصل على نسختك التّجريبيّة من    برنامج رفود
+
+            </h1>
+            <h2 class="p-2">تزوّد بالأدوات المثاليّة لمشروعٍ ناجح.
+            </h2>
+            <img src="./image.png" alt="" width="300px">
+            <button onclick="signup()" class="Sign-Up-ceneter"> حساب تجريبي</button>
+        </div>
+        </div>
+
+
+    <section style="text-align: center;padding-top: 100px;" class="channels ">
+        <i class="fa-solid fa-thumbs-up like"></i>
+        <h2>
+قنوات الربط
+        </h2>
+        <div class="container">
+        <img src="./earth-2.0.png" alt="" width="200px">
+        <img src="./aven.png" alt="" width="200px">
+        <img src="./hex-lab.png" alt="" width="200px">
+        <img src="./lighting.png" alt="" width="200px">
+        <img src="./ideaa.png" alt="" width="200px">
+    </div>
+    </section>
+
+   
+    </div>
+<!--Footer-->
+<footer class="footer">
+    <div class="row top">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                    <div class="content mb-4">
+                        <h3>
+                            رفود </h3>
+                        <a href="index.html"> الصفحة الرئيسية</a>
+                        <a href="prices.html"> الأسعار </a>
+                        <a href="#">المدونة  </a>
+                        <a href="#">كيف تعمل المنصة</a>
+                        <a href="#"> المنتجات</a>
+                        <a href="#">  قسم المساعدة</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6">
+                    <div class="content mb-4">
+                        <h3>
+                             تجربة حساب جديد </h3>
+                             <button onclick="signup()" class="Log-in"> حساب جديد</button>
+
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <img src="./logo.jpeg" style="border-radius: 50%; width: 120px;">
+        </div>
+    </div>
+
+
+    <div class="bottom row">
+        <form>
+           
+
+                
+            
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h1>تواصل معنا
+                </h1>
+                
+                <h2 dir="rtl">الرياض - واجهة الرياض,  المملكة العربية السعودية
+                </h2>
+                <h2>info@rofood.co</h2>
+               
+            </div>
+        </form>
+    </div>
+
+    <div class="copy-right">
+        <h2>رفود ©️ 2022. جميع الحقوق محفوظة.</h2>
+        <div class="social-media">
+            <a href="#"><i onclick="linkedin()" class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i onclick="facebook()" class="fa-brands fa-facebook-square"></i></a>
+            <a href="#"><i onclick="twetter()" class="fa-brands fa-twitter-square"></i></a>
+            <a href="#"><i onclick="insta()" class="fa-brands fa-instagram-square"></i></a>
+        </div>
+    </div>
+</footer>
+<div class="whats">
+    <i onclick="whats()"><img src="./whatsapp_icon.png" alt="" width="100px"></i>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
